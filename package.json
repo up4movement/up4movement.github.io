@@ -1,0 +1,26 @@
+{
+  "name": "2_working_copy_up4movement",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "doc": "doc"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "jekyll serve"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/up4movement/up4movement.github.io.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/up4movement/up4movement.github.io/issues"
+  },
+  "homepage": "https://github.com/up4movement/up4movement.github.io#readme",
+  "dependencies": {
+    "gh-pages": "^3.1.0"
+  }
+}
