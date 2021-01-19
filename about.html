@@ -1,0 +1,182 @@
+---
+layout: default
+section_id: about
+skills:
+  - title: Certified Personal Trainer, National Academy of Sports Medicine
+  - title: Group Fitness Instructor, Athletics & Fitness Association of America
+  - title: The Science of Functional Aging, IDEA Health & Fitness Association
+  - title: Master of Science, Human Resource Management, Copenhagen Business School
+  - title: Bachelor of Arts, International Business & Modern Languages, University of Southern Denmark
+
+testimonials:
+  - text: 'Reprehenderit eos et non et ut eum reprehenderit quis sequi quia vel repellendus id. Velit quit blanditiis dolor quam error eos dolores sequi eaque rerum est. Velit quit blanditiis dolor quam error eos dolores sequi eaque rerum est.'
+    author: David White
+    position: Designer at Huglab
+    avatar: images/@stock/author-avatar-1.png
+  - text: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat consectetuer sit amet magna adipiscing.'
+    author: David White
+    position: Designer at Huglab
+    avatar: images/@stock/author-avatar-2.png
+  - text: 'Reprehenderit eos et non et ut eum reprehenderit quis sequi quia vel repellendus id. Velit quit blanditiis dolor quam error eos dolores sequi eaque rerum est. Velit quit blanditiis dolor quam error eos dolores sequi eaque rerum est.'
+    author: David White
+    position: Designer at Huglab
+    avatar: images/@stock/author-avatar-3.png
+
+members:
+  - name: Mark Wayne
+    position: founder
+    desc: consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat consectetuer sit.
+    avatar: images/@stock/member-1.jpg
+    socials:
+      - icon_class: fa fa-twitter
+        url: http://twitter.com
+      - icon_class: fa fa-facebook
+        url: http://facebook.com
+  - name: Kate Holms
+    position: Creative Director
+    desc: consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat consectetuer sit.
+    avatar: images/@stock/member-2.jpg
+    socials:
+      - icon_class: fa fa-twitter
+        url: http://twitter.com
+      - icon_class: fa fa-facebook
+        url: http://facebook.com
+      - icon_class: fa fa-dribbble
+        url: http://dribbble.com
+  - name: Tom Hason
+    position: Designer
+    desc: consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat consectetuer sit.
+    avatar: images/@stock/member-3.jpg
+    socials:
+      - icon_class: fa fa-twitter
+        url: http://twitter.com
+      - icon_class: fa fa-facebook
+        url: http://facebook.com
+      - icon_class: fa fa-tumblr
+        url: http://tumblr.com
+  - name: Lily Whrem
+    position: Developer
+    desc: consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat consectetuer sit.
+    avatar: images/@stock/member-4.jpg
+    socials:
+      - icon_class: fa fa-twitter
+        url: http://twitter.com
+      - icon_class: fa fa-facebook
+        url: http://facebook.com
+---
+
+<div class="full">
+  <div class="row">
+    <div class="large-12 columns">
+      <h2>History & Mission</h2>
+      <h4 style="color: #999">Hi, I'm Katrina, founder of UP4MOVEMENT!</h4>
+      <!-- <div class="spacing"></div> -->
+      <p>
+        I grew up in Denmark with a Danish mother and an American father, and
+        have had the privilege to live, work and travel abroad for most of my
+        life before settling in Michigan City, Indiana. My experiences
+        eventually guided me towards my ultimate purpose and what I love the
+        most - helping others unlock their potential to accomplish great(er!)
+        things through healthier lifestyles.
+      </p>
+      <p>
+        Nothing energizes me more than movement and helping others improve their
+        health to be at their best, through all aspects and stages of life –
+        which is exactly the mission of the company.
+      </p>
+    </div>
+  </div>
+  <!-- <div class="spacing"></div> -->
+</div>
+
+<div class="full" style="background: #f5f5f5; padding: 40px 0 0">
+  <div class="row">
+    <div class="large-12 columns">
+      <h3>
+        <u style="text-decoration-thickness: 0.12rem"
+          >Certifications and education</u
+        >
+      </h3>
+      <div class="spacing"></div>
+      <ul class="bars">
+        {% for skill in page.skills %}
+        <li>
+          <h4 style="text-transform: capitalize">
+            {{skill.title}}
+            <strong>{{skill.percent}}</strong>
+          </h4>
+          <p class="highlighted" data-percent="{{skill.percent}}"></p>
+        </li>
+        {% endfor %}
+      </ul>
+    </div>
+
+    <!-- TESTIMONIALS -->
+    <!-- <div class="medium-6 columns">
+      <h3>The testimonials</h3>
+      <div class="mod modTestimonials simple">
+        <div class="row">
+          <div class="small-12 columns">
+            <div class="items">
+              {% for t in page.testimonials %}
+                <div class="item">
+                  <p class="quote">{{t.text}}</p>
+                  <div class="author">
+                    <p class="author-avatar">
+                      <img alt="" src="{{t.avatar}}" />
+                    </p>
+                    <p class="author-name">
+                      -
+                      <strong>
+                        {{t.author}}
+                      </strong>
+                      , {{t.position}}
+                    </p>
+                  </div>
+                </div>
+              {% endfor %}
+            </div>
+          </div>
+        </div>
+      </div>
+    </div> -->
+  </div>
+  <div class="two spacing"></div>
+</div>
+
+<!-- TEAM section -->
+<!-- <div class="full">
+  <div class="row">
+    <div class="large-12 columns">
+      <h3>Our team</h3>
+      <div class="spacing"></div>
+    </div>
+  </div>
+  <div class="row">
+    {% for member in page.members %}
+      <div class="small-6 medium-3 large-3 columns">
+        <div class="mod modTeamMember style-2">
+          <div class="member">
+            <img class="avatar" alt="" src="{{site.url}}/{{member.avatar}}" />
+            <div class="overlay">
+              <ul class="socials">
+                {% for social in member.socials %}
+                  <li>
+                    <a href='{{social.url}}'>
+                      <i class='{{social.icon_class}}'></i>
+                    </a>
+                  </li>
+                {% endfor %}
+              </ul>
+            </div>
+          </div>
+          <h3>{{member.name}}</h3>
+          <p class="position">{{member.position}}</p>
+          <p>{{member.desc}}</p>
+          <div class="two spacing"></div>
+        </div>
+      </div>
+    {% endfor %}
+  </div>
+  <div class="three spacing"></div>
+</div> -->
