@@ -1,0 +1,28 @@
+---
+layout: default
+section_id: testimonials
+testimonials:
+  - name: Carter Wagner
+    age: 29
+    testimony: Katrina's an amazing trainer/human! Her passion for training WILL show you results if that's what you want. There are few people in this industry that possess the work ethic, knowledge and authentic positivity that she has. She's a little ray of Danish sunshine! 10/10, would recommend!
+  - name: Steve W
+    age: 68
+    testimony: I have had the pleasure of working with Katrina Jackson over the past few months as my personal trainer. From the first day I met Katrina she was enthusiastic and excited about her job. Every time we meet she is prepared with a plan of action for our session. If I have a particular ache or pain, she can quickly adapt the day's program to accommodate the problematic body part. She watches my movements and form for proper execution of each exercise and corrects me when needed. She works hard to make sure I get the most out of each workout and she makes me want to make every effort to do my best. Katrina is able to push me to achieve my goals through continuous  challenges and encouragement. I couldn’t be any more pleased with the progress I have made while training with Katrina.
+    testimony2: I have worked with many trainers over the years and can say that I have a great time with her and the upmost respect for Katrina’s professionalism. Moreover, her continued learning of skills to bring the best out of her clients and keeping up with changes in the field make her a valued part of my fitness conditioning. Her kindness and caring manner along with a great sense of humor make me look forward to each meeting we have.
+---
+
+<div class="full">
+  <div class="row">
+    <div class="large-12 columns">
+      <h2>Testimonials</h2>
+      {% for testimonial in page.testimonials %}
+      <p class="testimony">{{ testimonial.testimony }}</p>
+      {% if testimonial.testimony2 %}
+      <p class="testimony2">{{ testimonial.testimony2 }}</p>
+      {% endif %}
+      <p class="witness">- {{ testimonial.name }}, {{ testimonial.age }}</p>
+      {% endfor %}
+    </div>
+  </div>
+  <div class="spacing"></div>
+</div>
