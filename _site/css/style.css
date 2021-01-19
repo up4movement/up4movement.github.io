@@ -3433,6 +3433,8 @@ body {
   /* min-width: 11rem; */
 }
 
+/* Stylistic changes to text and numbers */
+
 .number-raise {
   vertical-align: 3%;
 }
@@ -3466,18 +3468,17 @@ table caption {
   font-size: 0.85rem;
 }
 
-td {
-}
-
-tfoot.schedule-footer td {
-  font-size: 0.7rem;
-  font-style: italic;
-  font-weight: normal;
+.quarter-larger {
+  font-size: 1.25rem;
 }
 
 .hours {
   padding-right: 1.5rem;
   text-align: right;
+}
+
+.session-group p {
+  font-size: 1.25rem;
 }
 
 @media only screen and (max-width: 70em) {
