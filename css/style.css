@@ -3455,10 +3455,12 @@ table {
 
 table tr td {
   text-align: center;
+  color: #777;
 }
 
-table tr th {
+table thead tr th {
   text-align: center;
+  color: #888;
 }
 
 table caption {
@@ -3479,6 +3481,22 @@ table caption {
 
 .session-group p {
   font-size: 1.25rem;
+}
+
+.testimony,
+.testimony2 {
+  font-style: italic;
+  margin-bottom: 0;
+}
+
+.testimony2 {
+  margin-top: 1rem;
+}
+
+.witness {
+  font-style: italic;
+  text-indent: 1rem;
+  margin-bottom: 1.75rem;
 }
 
 @media only screen and (max-width: 70em) {
