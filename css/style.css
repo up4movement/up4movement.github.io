@@ -3455,10 +3455,12 @@ table {
 
 table tr td {
   text-align: center;
+  color: #666;
 }
 
-table tr th {
+table thead tr th {
   text-align: center;
+  color: #777;
 }
 
 table caption {
