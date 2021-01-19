@@ -29,8 +29,9 @@ https://medium.com/@stefanneculai/how-to-build-a-free-static-website-with-jekyll
 
 NB: The `_site` folder continuously regenerates itself, doesn't require a `jekyll build` command, this actually creates bugs (don't use that command!)
 
-5. `npm run deploy` runs the script that deploys the `_site` folder to `gh-pages` branch, which is what the site is running on
+5. `npm run deploy` (from the branch you finished working on) runs the script that deploys the `_site` folder to `gh-pages` branch, which is what the site is running on
+   NB: Haven't had bugs with `npm run deploy`, but if there are, then the local master branch is working and I can pull from master (the latest changes) and run `npm run deploy` from there
 
-6. For some reason, after every deploy to `gh-pages`, Github usually re-publishes the site to `up4movement.github.io`, so visiters to the site get 404 errors.
+1. For some reason, after every deploy to `gh-pages`, Github usually re-publishes the site to `up4movement.github.io`, so visiters to the site get 404 errors.
 
 - Under 'settings' of the repo, scroll down to GitHub Pages and type in `up4movement.com` in the Custom domain field and click Save. The site is up again in 2 seconds.
