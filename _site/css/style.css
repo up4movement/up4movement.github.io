@@ -1594,7 +1594,7 @@ body.screenshot {
 .modDefaultSlider .sequence p {
   font-size: 24px;
   letter-spacing: 2px;
-  font-weight: 200;
+  font-weight: 400;
   color: #eee;
 }
 .modDefaultSlider .sequence .buttons-wrapper .button {
@@ -3386,6 +3386,7 @@ body {
 #first-sentence {
   font-size: 1.14rem;
   margin-left: -50%;
+  font-weight: 600;
   /* padding: 0 50%; */
   /* text-align: center; */
 }
@@ -3433,7 +3434,7 @@ body {
   /* min-width: 11rem; */
 }
 
-/* Stylistic changes to text and numbers */
+/* Text and Number styling */
 
 .number-raise {
   vertical-align: 3%;
