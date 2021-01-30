@@ -72,6 +72,10 @@ hr {
   border-left: 1px solid #cfcfcf;
 }
 
+.half-spacing {
+  height: 10px;
+}
+
 .spacing {
   height: 20px;
 }
@@ -213,12 +217,15 @@ ul.shortcode-list i {
   text-transform: uppercase;
   letter-spacing: 1px;
   color: #fff;
-  background: #f9ce06;
-  border: 2px solid #f9ce06;
+  /* background: #f9ce06;
+  border: 2px solid #f9ce06; */
+  background: #32cd32;
+  border: 2px solid #32cd32;
 }
 
 .button:hover {
-  background-color: rgba(249, 206, 6, 0.8);
+  /* background-color: rgba(249, 206, 6, 0.8); */
+  background-color: rgba(34, 139, 34, 0.8);
 }
 
 .button.boxed {
@@ -3546,7 +3553,7 @@ body {
 /* Text and Number styling */
 
 .number-raise {
-  vertical-align: 3%;
+  vertical-align: 2%;
 }
 
 .green {
