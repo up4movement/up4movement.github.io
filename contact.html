@@ -6,10 +6,14 @@ section_id: contact
 <div class="full">
   <div class="row">
     <!-- CONTACT FORM - comment in when ready to use -->
-    <!-- <div class="medium-8 columns">
+    <div class="medium-8 columns">
       <div class="form">
         <div class="row">
-          <form id="contact_form" method="POST">
+          <form
+            id="contact_form"
+            method="POST"
+            action="https://formspree.io/f/xdopkya"
+          >
             <div class="large-12 columns">
               <p id="thanks" style="display: none">
                 Thanks for contacting us, we'll be in touch soon!
@@ -24,7 +28,7 @@ section_id: contact
               />
               <input
                 class="required email"
-                name="email"
+                name="_replyto"
                 placeholder="EMAIL"
                 type="text"
               />
@@ -45,12 +49,15 @@ section_id: contact
         </div>
       </div>
       <div class="two spacing"></div>
-    </div> -->
+    </div>
 
-    <!-- <div class="medium-4 columns"> COMMENT IN WHEN CONTACT FORM IS USED-->
+    <!-- COMMENT IN WHEN CONTACT FORM IS USED -->
+    <div class="medium-4 columns">
+      <!-- When no contact form-->
+      <!-- <div class="large-12 columns"> -->
 
-    <!-- make class='medium-4 when contact form is used-->
-    <div class="large-12 columns">
+      <!-- Google map iframe -->
+
       <div class="contact-details" style="text-align: center">
         <h4>location:</h4>
         <p style="margin-bottom: 0">617 Franklin St Suite 4</p>
@@ -61,8 +68,19 @@ section_id: contact
         <a href="mailto:up4movement@gmail.com" style="color: #9c9c9c"
           >up4movement@gmail.com</a
         >
+        <div class="spacing"></div>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11913.022829128677!2d-86.90783709845961!3d41.71500074670129!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88110801c1685359%3A0xa13cc2f88062c513!2s615%20Franklin%20St%2C%20Michigan%20City%2C%20IN%2046360!5e0!3m2!1sen!2sus!4v1612028384610!5m2!1sen!2sus"
+          width="90%"
+          height="260"
+          frameborder="0"
+          style="border: 0"
+          allowfullscreen=""
+          aria-hidden="false"
+          tabindex="0"
+        ></iframe>
       </div>
     </div>
   </div>
+  <div class="four spacing"></div>
 </div>
-<div class="four spacing"></div>
