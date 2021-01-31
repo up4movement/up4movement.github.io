@@ -3564,6 +3564,12 @@ body {
   font-style: italic;
 }
 
+/* Honeypot spam filter for form  */
+#useless-hpot {
+  opacity: 0;
+  position: absolute;
+}
+
 table {
   width: 640px;
   /* width: 60%; */

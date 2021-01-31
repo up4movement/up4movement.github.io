@@ -65,9 +65,12 @@ jQuery(document).foundation();
     $("form#contact_form").validate({
       messages: {},
       submitHandler(form) {
+        if ($("#useless-hpot").val() !== "") {
+          return false;
+        }
         $.ajax({
-          method: "POST", // insert
-          dataType: "json", // insert
+          method: "POST",
+          dataType: "json",
           url: "https://formspree.io/f/xdopbkya",
           data: $(form).serialize(),
           success(response) {
