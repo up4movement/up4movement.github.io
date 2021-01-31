@@ -3596,6 +3596,7 @@ table caption {
   font-weight: normal;
   font-style: italic;
   font-size: 0.85rem;
+  padding-top: 0.4rem;
 }
 
 .quarter-larger {
