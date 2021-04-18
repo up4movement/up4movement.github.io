@@ -23,66 +23,46 @@ testimonials:
     avatar: images/@stock/author-avatar-3.png
 
 members:
-  - name: Mark Wayne
-    position: founder
-    desc: consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat consectetuer sit.
-    avatar: images/@stock/member-1.jpg
-    socials:
-      - icon_class: fa fa-twitter
-        url: http://twitter.com
-      - icon_class: fa fa-facebook
-        url: http://facebook.com
-  - name: Kate Holms
-    position: Creative Director
-    desc: consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat consectetuer sit.
-    avatar: images/@stock/member-2.jpg
-    socials:
-      - icon_class: fa fa-twitter
-        url: http://twitter.com
-      - icon_class: fa fa-facebook
-        url: http://facebook.com
-      - icon_class: fa fa-dribbble
-        url: http://dribbble.com
-  - name: Tom Hason
-    position: Designer
-    desc: consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat consectetuer sit.
-    avatar: images/@stock/member-3.jpg
-    socials:
-      - icon_class: fa fa-twitter
-        url: http://twitter.com
-      - icon_class: fa fa-facebook
-        url: http://facebook.com
-      - icon_class: fa fa-tumblr
-        url: http://tumblr.com
-  - name: Lily Whrem
-    position: Developer
-    desc: consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat consectetuer sit.
-    avatar: images/@stock/member-4.jpg
-    socials:
-      - icon_class: fa fa-twitter
-        url: http://twitter.com
-      - icon_class: fa fa-facebook
-        url: http://facebook.com
+  - name: Katrina Faye Jackson
+    position: founder and lead trainer
+    desc: Certified Personal Trainer, National Academy Of Sports Medicine. I founded UP4MOVEMENT to help others improve their strength and health. I customize training programs to fit my clients' needs, help them overcome barriers and ensure that they reach their goals.
+    avatar: images/about_page/katrina.jpg
+  - name: Christopher McHugh
+    position: Trainer
+    desc: Certified Personal Trainer, National Academy Of Sports Medicine. I overcame a history of injuries, setbacks and obesity to become a trainer, and I rely on this experience to ensure that all my clients transform their lives as well.
+    avatar: images/about_page/chris.jpg
+  - name:
+    position:
+    desc:
+    avatar:
+  - name:
+    position:
+    desc:
+    avatar:
 ---
 
 <div class="full">
   <div class="row">
     <div class="large-12 columns">
       <h2>History & Mission</h2>
-      <h4 style="color: #999">Hi, I'm Katrina, founder of UP4MOVEMENT!</h4>
+      <h4 style="color: #999">
+        Hi, I'm Katrina, founder of UP4MOVEMENT!
+      </h4>
       <!-- <div class="spacing"></div> -->
       <p>
-        I grew up in Denmark with a Danish mother and an American father, and
-        have had the privilege to live, work and travel abroad for most of my
-        life before settling in Michigan City, Indiana. My experiences
-        eventually guided me towards my ultimate purpose and what I love the
-        most - helping others unlock their potential to accomplish great(er!)
-        things through healthier lifestyles.
+        I grew up in Denmark with a Danish mother and an American
+        father, and have had the privilege to live, work and travel
+        abroad for most of my life before settling in Michigan City,
+        Indiana. My experiences eventually guided me towards my
+        ultimate purpose and what I love the most - helping others
+        unlock their potential to accomplish great(er!) things through
+        healthier lifestyles.
       </p>
       <p>
-        Nothing energizes me more than movement and helping others improve their
-        health to be at their best, through all aspects and stages of life –
-        which is exactly the mission of the company.
+        Nothing energizes me more than movement and helping others
+        improve their health to be at their best, through all aspects
+        and stages of life – which is exactly the mission of the
+        company.
       </p>
     </div>
   </div>
@@ -145,7 +125,7 @@ members:
 </div>
 
 <!-- TEAM section -->
-<!-- <div class="full">
+<div class="full">
   <div class="row">
     <div class="large-12 columns">
       <h3>Our team</h3>
@@ -154,29 +134,33 @@ members:
   </div>
   <div class="row">
     {% for member in page.members %}
-      <div class="small-6 medium-3 large-3 columns">
-        <div class="mod modTeamMember style-2">
-          <div class="member">
-            <img class="avatar" alt="" src="{{site.url}}/{{member.avatar}}" />
-            <div class="overlay">
-              <ul class="socials">
-                {% for social in member.socials %}
-                  <li>
-                    <a href='{{social.url}}'>
-                      <i class='{{social.icon_class}}'></i>
-                    </a>
-                  </li>
-                {% endfor %}
-              </ul>
-            </div>
+    <div class="small-6 medium-3 large-3 columns">
+      <div class="mod modTeamMember style-2">
+        <div class="member">
+          <img
+            class="avatar"
+            alt=""
+            src="{{site.url}}/{{member.avatar}}"
+          />
+          <div class="overlay">
+            <ul class="socials">
+              {% for social in member.socials %}
+              <li>
+                <a href="{{social.url}}">
+                  <i class="{{social.icon_class}}"></i>
+                </a>
+              </li>
+              {% endfor %}
+            </ul>
           </div>
-          <h3>{{member.name}}</h3>
-          <p class="position">{{member.position}}</p>
-          <p>{{member.desc}}</p>
-          <div class="two spacing"></div>
         </div>
+        <h3>{{member.name}}</h3>
+        <p class="position">{{member.position}}</p>
+        <p>{{member.desc}}</p>
+        <div class="two spacing"></div>
       </div>
+    </div>
     {% endfor %}
   </div>
   <div class="three spacing"></div>
-</div> -->
+</div>
