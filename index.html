@@ -19,7 +19,7 @@ slides:
         animation: bottom-to-top
       - text: '&nbsp;GROUP TRAINING'
         animation: bottom-to-top
-      - text: '&nbsp;EVENTS'
+      - text: '&nbsp;CORPORATE AND SOCIAL EVENTS'
         animation: bottom-to-top
       - text: '&nbsp;PRIVATE BOUTIQUE STUDIO IN THE HEART OF MICHIGAN CITY'
         animation: bottom-to-top
@@ -78,19 +78,25 @@ clients:
     <ul class="sequence-canvas">
       {% for slide in page.slides %}
       <li class="frame">
-        <div class="bg" style="background-image: url({{slide.bg}});"></div>
+        <div
+          class="bg"
+          style="background-image: url({{slide.bg}});"
+        ></div>
         <!-- <p class="centered-text bottom-to-top">You plan to live a long, healthy life, so start preparing your body for the journey now.</p> -->
 
         <!-- Top sentence -->
-        <div class="buttons-wrapper bottom-to-top" style="position: relative">
+        <div
+          class="buttons-wrapper bottom-to-top"
+          style="position: relative"
+        >
           <div class="row">
             <div
               class="large-7 large-offset-5 medium-9 medium-offset-3 columns"
             >
               <div class="two spacing">
                 <p id="first-sentence">
-                  You plan to live a long, healthy life, so start preparing your
-                  body for the journey now
+                  You plan to live a long, healthy life, so start
+                  preparing your body for the journey now
                 </p>
               </div>
             </div>
@@ -98,9 +104,15 @@ clients:
         </div>
 
         <!-- The Button -->
-        <div class="buttons-wrapper {{slide.buttons.animation}}" style="">
+        <div
+          class="buttons-wrapper {{slide.buttons.animation}}"
+          style=""
+        >
           <div class="row">
-            <div class="{{slide.buttons.class}} columns" id="get-started-btn">
+            <div
+              class="{{slide.buttons.class}} columns"
+              id="get-started-btn"
+            >
               <div class="spacing"></div>
               {% for button in slide.buttons.items %}
               <a class="button {{button.class}}" href="{{button.url}}"
@@ -112,10 +124,15 @@ clients:
         </div>
 
         {% if slide.infos %} {% for info in slide.infos %}
-        <div class="info{{forloop.index}} {{info.animation}}" style="">
+        <div
+          class="info{{forloop.index}} {{info.animation}}"
+          style=""
+        >
           <div class="row">
             <div class="medium-10 large-8 columns">
-              <p class="fa fa-check" style="color: #fff">{{info.text}}</p>
+              <p class="fa fa-check" style="color: #fff">
+                {{info.text}}
+              </p>
               <div class="spacing"></div>
             </div>
           </div>
@@ -283,7 +300,10 @@ clients:
   <div class="row">
     <div class="large-12 columns">
       <p class="centered-text">
-        <i class="fa fa-quote-left" style="color: #f9ce06; font-size: 36px"></i>
+        <i
+          class="fa fa-quote-left"
+          style="color: #f9ce06; font-size: 36px"
+        ></i>
       </p>
     </div>
   </div>
