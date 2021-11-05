@@ -34,4 +34,4 @@ NB: The `_site` folder continuously regenerates itself, but you can try a manual
 
 2. For some reason, after every deploy to `gh-pages`, Github usually re-publishes the site to `up4movement.github.io`, so visiters to the site get 404 errors.
 
-- Under 'settings' of the repo, scroll down to GitHub Pages and type in `up4movement.com` in the Custom domain field and click Save. The site is up again in 2 seconds.
+- Under 'settings' of the repo, click on Pages tab on the bottom left and type in `up4movement.com` in the Custom domain field and click Save. The site is up again in 2 seconds.
